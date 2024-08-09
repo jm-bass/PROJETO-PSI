@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Atletas{% endblock %}
+
+{% block content %}
+
+<h1>Atletas</h1>
+
+    {% for atleta in atletas %}
+    <div class="card" style="width: 18rem;">
+        <img src="{% static atleta.foto %}" class="card-img-top" alt="{{ atleta.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ atleta.nome }}</h5>
+          <div class="card-text">
+            Idade: {{ atleta.idade }}<br>
+            Local de Nascimento: {{ atleta.nascimento }}<br>
+            Posição: {{ atleta.posicao }}<br>
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
