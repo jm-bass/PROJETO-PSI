@@ -1,0 +1,32 @@
+#img{
+    height: 50px !important;
+}
+
+body{
+    background-color: black;
+}
+
+header span{
+    color: white;
+    margin-right: 20px;
+}
+
+header .nav-pills .nav-link.active{
+    color: black !important;
+    background-color: #fcb900 !important;
+}
+
+header .nav-link{
+    color: white;
+}
+
+footer div span{
+    color: #fcb900 !important;
+}
+
+#imgf{
+    background-color: #fcb900;
+    border: 30px;
+    border-radius: 20px;
+    height: 40px !important;
+}
