@@ -1,10 +1,43 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Sobre{% endblock %}
+{% block title %}O maior do RN!{% endblock %}
 
 {% block class3 %}<a href="{% url 'sobre' %}" class="nav-link active" aria-current="page">{% endblock %}
 
 {% block content %}
 
+<div class="container">
+    <main>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3" id="card1" style="background-image: url('{%static 'treino.jpeg'%}'); width: 100%;
+        opacity: 80%;
+        height: auto;
+        background-position-x: right;
+        background-position-y: center;">
+          <div class="container-fluid py-5" style="color:#fcb900;">
+            <h1 class="display-5 fw-bold" >Veja as novas contratações de 2024</h1>
+            <p class="col-md-8 fs-4" style="color: white;" >ABC busca reforços na Europa para temporada 2024. O grande Diego Cirilo está entre os novos jogadores contratados para este ano.</p>
+            <!--<button class="btn btn-primary btn-lg" type="button">Example button</button>-->
+          </div>
+        </div>
+    
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+              <h2>Veja o elenco completo</h2>
+              <p>Com elenco forte, o ABC FC, vem mais do que preparado para a campanha 2024.</p>
+              <button class="btn btn-outline-light" type="button"> <a href="{% url 'atletas' %}" style="text-decoration: none; color:white ;"> Elenco completo</a></button>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+              <h2>Fundação</h2>
+              <p>ABC Futebol Clube é uma associação esportiva brasileira do estado do Rio Grande do Norte. Foi fundada como clube de futebol por um grupo de jovens natalenses no dia 29 de junho de 1915, no bairro da Ribeira, na cidade de Natal.</p>
+            </div>
+          </div>
+        </div>
+</div>
+
+  
 {% endblock %}
