@@ -1,11 +1,65 @@
 {% extends 'base.html' %}
-{% block title %}Essa página é a Index{% endblock %}
+{% load static %}
 
+{% block title %}ABC FC - O Mais Querido do RN{% endblock %}
 
 {% block class1 %}<a href="{% url 'index' %}" class="nav-link active" aria-current="page">{% endblock %}
 
 
 {% block content %}
-    <h1>Página Inicial</h1>
-    <p>Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o entendimento das metas propostas prepara-nos para enfrentar situações atípicas decorrentes das diversas correntes de pensamento. No entanto, não podemos esquecer que o fenômeno da Internet facilita a criação das regras de conduta normativas. Do mesmo modo, a hegemonia do ambiente político deve passar por modificações independentemente das diretrizes de desenvolvimento para o futuro. A certificação de metodologias que nos auxiliam a lidar com o início da atividade geral de formação de atitudes representa uma abertura para a melhoria dos procedimentos normalmente adotados.</p>
-    {% endblock %}
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 0" class="" aria-current="true"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'banner1.png' %}" alt="banner" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>-->
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'banner2.webp' %}" alt="banner" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>-->
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <center>
+    <div class=" sobre">
+        <h1>Conheça um pouco da nossa estrutura</h1>
+    </div>
+    </center>
+
+  <div class="container">
+    <div class="textos">
+        <h1>Complexo Sócio-Esportivo Vicente Farache</h1>
+    <p>O Complexo Sócio-Esportivo Vicente Farache fica localizado no bairro de Ponta Negra, área nobre da cidade de Natal (RN), e abrange uma área total de 100.000 m2. Em seu espaço físico ficam: o Estádio Maria Lamas Farache – Frasqueirão, o CT Alberi Ferreira de Matos, dos profissionais abecedistas, o CT José Nilson de Sá, das categorias de base alvinegras, e a Sede Social do clube.</p>
+    </div>
+
+    <div class="textos">
+        <h1>Estádio Maria Lamas Farache – Frasqueirão</h1>
+        <p>Inaugurado após seis anos de obras, no dia 22 de janeiro de 2006, o estádio Maria Lamas Farache - Frasqueirão está localizado no Complexo Sócio-Esportivo Vicente Farache, na Rota do Sol, bairro de Ponta Negra, em Natal (RN), e é considerado um dos mais modernos e confortáveis estádios de futebol do país. O jogo inaugural foi um amistoso contra o Alecrim, que terminou empatado em 1 a 1.Construído em módulos, quatro ao todo, foi inaugurado com apenas dois deles concluídos, exatamente os dois maiores, o módulo I, que abriga o setor de cadeiras, camarotes, cabines de imprensa, praça de alimentação e loja de produtos do clube, contando ainda com dois elevadores, e o módulo II, que também conta uma área com bares e lanchonetes.Um pouco mais de um ano depois, no dia 29 de janeiro de 2007, foi inaugurado o módulo III, em um amistoso interestadual diante do Campinense/PB, que acabou empatado em 1 a 1. Por fim, a conclusão do estádio aconteceu com a construção do módulo IV, chamado de “Módulo Wallyson”, já que foi viabilizado com o dinheiro da venda do atacante Wallyson para o Atlético/PR. Na inauguração, no dia 5 de março de 2008, empate em 1 a 1 com o Madureira/RJ, pela Copa do Brasil.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

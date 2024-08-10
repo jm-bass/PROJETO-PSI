@@ -1,24 +1,35 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Atletas{% endblock %}
+{% block title %}Jogadores - ABC FC{% endblock %}
+
+{% block class2 %}<a href="{% url 'atletas' %}" class="nav-link active" aria-current="page">{% endblock %}
 
 {% block content %}
 
-<h1>Atletas</h1>
+<center>
+<h1 class="txtatle">Veja nosso elenco</h1>
+</center>
 
-    {% for atleta in atletas %}
+<center>
+<div class="container">
+  {% for atleta in atletas %}
     <div class="card" style="width: 18rem;">
-        <img src="{% static atleta.foto %}" class="card-img-top" alt="{{ atleta.nome }}">
-        <div class="card-body">
-          <h5 class="card-title">{{ atleta.nome }}</h5>
-          <div class="card-text">
-            Idade: {{ atleta.idade }}<br>
-            Local de Nascimento: {{ atleta.nascimento }}<br>
-            Posição: {{ atleta.posicao }}<br>
-          </div>
-        </div>
+      <img src="{% static atleta.foto %}" class="card-img-top" alt="{{ atleta.nome }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ atleta.nome }}</h5>
+        <!--<p class="card-text">{{ atleta.descricao }}</p>-->
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Posição: {{ atleta.posicao }}</li>
+        <li class="list-group-item">Idade: {{ atleta.idade }}</li>
+        <li class="list-group-item">Naturalidade: {{ atleta.nascimento }}</li>
+      </ul>
     </div>
     {% endfor %}
+</div>
+
+</center>
+
 
 {% endblock %}

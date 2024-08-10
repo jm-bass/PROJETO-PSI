@@ -1,3 +1,5 @@
+
+
 #img{
     height: 50px !important;
 }
@@ -20,6 +22,9 @@ header .nav-link{
     color: white;
 }
 
+
+
+
 footer div span{
     color: #fcb900 !important;
 }
@@ -29,4 +34,50 @@ footer div span{
     border: 30px;
     border-radius: 20px;
     height: 40px !important;
+}
+
+
+.btnper{
+    border: solid #fcb900 !important;
+    background-color: #fcb900 !important;
+}
+
+
+.textos{
+    margin-bottom: 50px;
+}
+
+.textos h1{
+    margin-bottom: 20px;
+    color: #fcb900;
+}
+
+.sobre{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 120%;
+}
+
+.sobre h1, .textos p{
+    color: white;
+}
+
+.footer{
+    margin-top: 150px !important;
+}
+
+
+
+/**ATLETAS**/
+
+.card{
+    display: inline-block !important;
+    margin: 30px;
+
+}
+
+.txtatle{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: white !important;
 }
